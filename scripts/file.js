@@ -101,20 +101,22 @@ postRequest = function(command) {
     $.ajax({
         type: "POST",
         url: 'http://hackathon.intrepidcs.com/api/data',
+        headers: {
+            'Authorization': 'Bearer 6c299d424e90cd865af81922cc397d586c8785d2f2368608a8cf0fa4edd6d407'
+        },
+        method: 'POST',
         data: {
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer 6c299d424e90cd865af81922cc397d586c8785d2f2368608a8cf0fa4edd6d407'
-            },
-            body: {'command': command}
+            command: command
         },
         dataType: "JSON",
         success: function (data) {
-            return command === response.data.command;
+            return command === data.command;
         },
-        error: function() {
+        error: function(data) {
             console.log('Error: ' + data);
         }
 
     });
 };
+// TO TEST UX
+// postRequest = function(command) { return true;}

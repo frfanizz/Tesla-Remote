@@ -1,12 +1,24 @@
+h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
+    text-align: center;
     width: 100%;
     height: 100%;
-    /* background-image: src("img/teslaimg.png"); */
+    /* background-image: url("../img/tesla_full.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 260px 400px; */
 }
-/* #remoteCtn {
-    width: inherit;
-    height: auto;
-} */
+#remoteCtn {
+    position: relative;
+    top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
 .grayed {
     color: gray;
 }
@@ -22,4 +34,17 @@ body {
 }
 .centerSpan {
     text-align: center;
+}
+.carWindowSpacer {
+    position: relative;
+    top: 16px;
+}
+div.fixed {
+    text-align: center;
+    position: fixed;
+    bottom: 8px;
+    font-size: initial;
+} 
+img {
+    opacity: 1;
 }

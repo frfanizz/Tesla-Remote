@@ -2,11 +2,12 @@
 <html>
 <head> 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-<title>Car control</title>
+<title>Tesla remote</title>
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="scripts/file.js"></script>
+
     <h1>Click on parts of the car to open/close them!</h1>
     <div id="remoteCtn">
         <div class="frunk">
@@ -31,15 +32,17 @@
             <a id="trunk"><img src="img/trunkclosed.png" alt="open trunk" /></a>
             <img src="img/empty.png"/>
         </div>
-        <span class="centerSpan">
+        <div class="carWindowSpacer" />
+        <div class="centerSpan">
             <button id="windowsButton">Open all windows</button>
-        </span>
+        </div>
     </div>
 
     <div class="flexDiv"></div>
 
-    <p>The doors, windows, and hood and trunk can all be activated!</p>
-
-    <p class="grayed">Thanks for the API, <a href="https://www.intrepidcs.com/">Intrepidcs</a>!</p>
+    <div class="fixed">
+        <h2>The doors, windows, trunk, and frunk can all be activated!</h2>
+        <p class="grayed">Thanks for the API, <a href="https://www.intrepidcs.com/">IntrepidCS</a>!</p>
+    </div>
 </body>
 </html>
