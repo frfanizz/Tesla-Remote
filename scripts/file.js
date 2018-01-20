@@ -22,32 +22,50 @@ window.onload = function() {
         // toggle flDoor
         if (!isFLDoorOpen) {
             // call post open fldoor
-            oClick.path[0].src = "img/flDooropen.png";
+            oClick.path[0].src = "img/fldooropen.png";
             oClick.path[0].alt = "Close front left door";
         } else {
             // call post close fldoor
-            oClick.path[0].src = "img/flDoorclosed.png";
+            oClick.path[0].src = "img/fldoorclosed.png";
             oClick.path[0].alt = "Open front left door";
         }
         isFLDoorOpen = !isFLDoorOpen;
     };
     document.getElementById("flWind").onclick = function(oClick) {
         // toggle flWind
-        alert("open flWind");
+        if (!isFLWindOpen) {
+            // call post open flwind
+            oClick.path[0].src = "img/flwindopen.png";
+            oClick.path[0].alt = "Close front left window";
+        } else {
+            // call post close flwind
+            oClick.path[0].src = "img/flwindclosed.png";
+            oClick.path[0].alt = "Open front left window";
+        }
+        isFLWindOpen = !isFLWindOpen;
     };
     document.getElementById("frWind").onclick = function(oClick) {
         // toggle frWind
-        alert("open frWind");
+        if (!isFRWindOpen) {
+            // call post open frwind
+            oClick.path[0].src = "img/frwindopen.png";
+            oClick.path[0].alt = "Close front right window";
+        } else {
+            // call post close frwind
+            oClick.path[0].src = "img/frwindclosed.png";
+            oClick.path[0].alt = "Open front right window";
+        }
+        isFRWindOpen = !isFRWindOpen;
     };
     document.getElementById("frDoor").onclick = function(oClick) {
         // toggle frDoor
         if (!isFRDoorOpen) {
             // call post open fldoor
-            oClick.path[0].src = "img/frDooropen.png";
+            oClick.path[0].src = "img/frdooropen.png";
             oClick.path[0].alt = "Close front right door";
         } else {
             // call post close fldoor
-            oClick.path[0].src = "img/frDoorclosed.png";
+            oClick.path[0].src = "img/frdoorclosed.png";
             oClick.path[0].alt = "Open front right door";
         }
         isFRDoorOpen = !isFRDoorOpen;
@@ -67,11 +85,29 @@ window.onload = function() {
     };
     document.getElementById("blWind").onclick = function(oClick) {
         // toggle blWind
-        alert("open blWind");
+        if (!isBLWindOpen) {
+            // call post open blwind
+            oClick.path[0].src = "img/blwindopen.png";
+            oClick.path[0].alt = "Close back left window";
+        } else {
+            // call post close blwind
+            oClick.path[0].src = "img/blwindclosed.png";
+            oClick.path[0].alt = "Open back left window";
+        }
+        isBLWindOpen = !isBLWindOpen;
     };
     document.getElementById("brWind").onclick = function(oClick) {
         // toggle brWind
-        alert("open brWind");
+        if (!isBRWindOpen) {
+            // call post open brwind
+            oClick.path[0].src = "img/brwindopen.png";
+            oClick.path[0].alt = "Close back right window";
+        } else {
+            // call post close fldoor
+            oClick.path[0].src = "img/brwindclosed.png";
+            oClick.path[0].alt = "Open back right window";
+        }
+        isBRWindOpen = !isBRWindOpen;
     };
     document.getElementById("brDoor").onclick = function(oClick) {
         // toggle brDoor
