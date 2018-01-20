@@ -1,64 +1,11 @@
 <!DOCTYPE html>
-
 <html>
 <head> 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="controller/toggleStuff.js" rel="stylesheet" type="text/css" />
 <title>Car control</title>
 </head>
 <body>
-    <script type="text/javascript">
-        window.onload = function() {
-            var isFLDoorOpen = false;
-            var isFLWindOpen = false;
-            var isFRWindOpen = false;
-            var isFRDoorOpen = false;
-            var isFLDoorOpen = false;
-            var isFLWindOpen = false;
-            var isFRWindOpen = false;
-            var isFRDoorOpen = false;
-            document.getElementById("frunk").onclick = function() {
-                // open frunk
-                alert("open frunk");
-            };
-            document.getElementById("flDoor").onclick = function() {
-                // toggle flDoor
-                alert("open flDoor");
-            };
-            document.getElementById("flWind").onclick = function() {
-                // toggle flWind
-                alert("open flWind");
-            };
-            document.getElementById("frWind").onclick = function() {
-                // toggle frWind
-                alert("open frWind");
-            };
-            document.getElementById("frDoor").onclick = function() {
-                // toggle frDoor
-                alert("open frDoor");
-            };
-            document.getElementById("blDoor").onclick = function() {
-                // toggle blDoor
-                alert("open blDoor");
-            };
-            document.getElementById("blWind").onclick = function() {
-                // toggle blWind
-                alert("open blWind");
-            };
-            document.getElementById("brWind").onclick = function() {
-                // toggle brWind
-                alert("open brWind");
-            };
-            document.getElementById("brDoor").onclick = function() {
-                // toggle brDoor
-                alert("open brDoor");
-            };
-            document.getElementById("trunk").onclick = function() {
-                // open trunk
-                alert("open trunk");
-            };
-        };
-    </script>
+    <script type="text/javascript" src="scripts/file.js"></script>
     <h1>Click on parts of the car to open/close them!</h1>
     <div class="frunk">
         <img src="img/empty.png"/>
@@ -83,7 +30,7 @@
         <img src="img/empty.png"/>
     </div>
 
-    <p>The doors, windows, and hood and trunk can all be activated! Thanks <a href="https://www.intrepidcs.com/">Intrepidcs!</a>
-    </p>
+    <p>The doors, windows, and hood and trunk can all be activated!</p>
+    <p><em>Thanks for the API <a href="https://www.intrepidcs.com/">Intrepidcs!</em></a></p>
 </body>
 </html>
