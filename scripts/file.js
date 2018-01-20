@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function () {
     var isFrunkOpen = false;
     var isFLDoorOpen = false;
     var isFRDoorOpen = false;
@@ -74,16 +74,16 @@ window.onload = function() {
             }
         }
     };
-    document.getElementById("windows").onclick = function(oClick) {
+    document.getElementById("windowsButton").onclick = function(oClick) {
         if (!isWindowsOpen) {
             if (postRequest("openAllWindows")) {
                 isWindowsOpen = !isWindowsOpen;
-                oClick.path[0].src = "img/windowsopen.png";
+                oClick.path[0].textContent = "Close all windows";
             }
         } else {
             if (postRequest("closeAllWindows")) {
                 isWindowsOpen = !isWindowsOpen;
-                oClick.path[0].src = "img/windowsclosed.png";
+                oClick.path[0].textContent = "Open all windows";
             }
         }
     };
@@ -95,16 +95,26 @@ window.onload = function() {
             }
         }
     };
-    // Generic post request
-    postRequest = function(command) {
-        var response = fetch(
-            'http://hackathon.intrepidcs.com/api/data', {
+});
+// Generic post request
+postRequest = function(command) {
+    $.ajax({
+        type: "POST",
+        url: 'http://hackathon.intrepidcs.com/api/data',
+        data: {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer 6c299d424e90cd865af81922cc397d586c8785d2f2368608a8cf0fa4edd6d407'
             },
             body: {'command': command}
-        });
-        return command === response.data.command;
-    };
-}
+        },
+        dataType: "JSON",
+        success: function (data) {
+            return command === response.data.command;
+        },
+        error: function() {
+            console.log('Error: ' + data);
+        }
+
+    });
+};

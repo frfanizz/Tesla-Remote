@@ -1,3 +1,25 @@
+body {
+    width: 100%;
+    height: 100%;
+    /* background-image: src("img/teslaimg.png"); */
+}
+/* #remoteCtn {
+    width: inherit;
+    height: auto;
+} */
 .grayed {
     color: gray;
+}
+/* .flexDiv {
+} */
+#windowsButton {
+    background-color: cyan;
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerSpan {
+    text-align: center;
 }

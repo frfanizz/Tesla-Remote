@@ -5,32 +5,41 @@
 <title>Car control</title>
 </head>
 <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="scripts/file.js"></script>
     <h1>Click on parts of the car to open/close them!</h1>
-    <div class="frunk">
-        <img src="img/empty.png"/>
-        <a id="frunk"><img src="img/frunkclosed.png" alt="open frunk" /></a>
-        <img src="img/empty.png"/>
-    </div>
-    <div class="front">
-        <a id="flDoor"><img src="img/fldoorclosed.png" alt="toggle front left door" /></a>
-        <a id="flWind"><img src="img/flroof.png" alt="toggle front left window" /></a>
-        <a id="frWind"><img src="img/frroof.png" alt="toggle front right window" /></a>
-        <a id="frDoor"><img src="img/frdoorclosed.png" alt="toggle front right door" /></a>
-    </div>
-    <div class="back">
-        <a id="blDoor"><img src="img/bldoorclosed.png" alt="toggle back left door" /></a>
-        <a id="blWind"><img src="img/blroof.png" alt="toggle back left window" /></a>
-        <a id="brWind"><img src="img/brroof.png" alt="toggle back right window" /></a>
-        <a id="brDoor"><img src="img/brdoorclosed.png" alt="toggle back right door" /></a>
-    </div>
-    <div class="trunk">
-        <img src="img/empty.png"/>
-        <a id="trunk"><img src="img/trunkclosed.png" alt="open trunk" /></a>
-        <img src="img/empty.png"/>
+    <div id="remoteCtn">
+        <div class="frunk">
+            <img src="img/empty.png"/>
+            <a id="frunk"><img src="img/frunkclosed.png" alt="open frunk" /></a>
+            <img src="img/empty.png"/>
+        </div>
+        <div class="front">
+            <a id="flDoor"><img src="img/fldoorclosed.png" alt="toggle front left door" /></a>
+            <a id="flWind"><img src="img/flroof.png" alt="toggle front left window" /></a>
+            <a id="frWind"><img src="img/frroof.png" alt="toggle front right window" /></a>
+            <a id="frDoor"><img src="img/frdoorclosed.png" alt="toggle front right door" /></a>
+        </div>
+        <div class="back">
+            <a id="blDoor"><img src="img/bldoorclosed.png" alt="toggle back left door" /></a>
+            <a id="blWind"><img src="img/blroof.png" alt="toggle back left window" /></a>
+            <a id="brWind"><img src="img/brroof.png" alt="toggle back right window" /></a>
+            <a id="brDoor"><img src="img/brdoorclosed.png" alt="toggle back right door" /></a>
+        </div>
+        <div class="trunk">
+            <img src="img/empty.png"/>
+            <a id="trunk"><img src="img/trunkclosed.png" alt="open trunk" /></a>
+            <img src="img/empty.png"/>
+        </div>
+        <span class="centerSpan">
+            <button id="windowsButton">Open all windows</button>
+        </span>
     </div>
 
+    <div class="flexDiv"></div>
+
     <p>The doors, windows, and hood and trunk can all be activated!</p>
-    <p class="grayed">Thanks for the API <a href="https://www.intrepidcs.com/">Intrepidcs!</a></p>
+
+    <p class="grayed">Thanks for the API, <a href="https://www.intrepidcs.com/">Intrepidcs</a>!</p>
 </body>
 </html>
