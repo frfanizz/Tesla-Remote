@@ -7,27 +7,79 @@
 <title>Car control</title>
 </head>
 <body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var isFLDoorOpen = false;
+            var isFLWindOpen = false;
+            var isFRWindOpen = false;
+            var isFRDoorOpen = false;
+            var isFLDoorOpen = false;
+            var isFLWindOpen = false;
+            var isFRWindOpen = false;
+            var isFRDoorOpen = false;
+            document.getElementById("frunk").onclick = function() {
+                // open frunk
+                alert("open frunk");
+            };
+            document.getElementById("flDoor").onclick = function() {
+                // toggle flDoor
+                alert("open flDoor");
+            };
+            document.getElementById("flWind").onclick = function() {
+                // toggle flWind
+                alert("open flWind");
+            };
+            document.getElementById("frWind").onclick = function() {
+                // toggle frWind
+                alert("open frWind");
+            };
+            document.getElementById("frDoor").onclick = function() {
+                // toggle frDoor
+                alert("open frDoor");
+            };
+            document.getElementById("blDoor").onclick = function() {
+                // toggle blDoor
+                alert("open blDoor");
+            };
+            document.getElementById("blWind").onclick = function() {
+                // toggle blWind
+                alert("open blWind");
+            };
+            document.getElementById("brWind").onclick = function() {
+                // toggle brWind
+                alert("open brWind");
+            };
+            document.getElementById("brDoor").onclick = function() {
+                // toggle brDoor
+                alert("open brDoor");
+            };
+            document.getElementById("trunk").onclick = function() {
+                // open trunk
+                alert("open trunk");
+            };
+        };
+    </script>
     <h1>Click on parts of the car to open/close them!</h1>
     <div class="frunk">
         <img src="img/empty.png"/>
-        <a onclick="openFrunk()"><img src="img/frunk.png" alt="open frunk" /></a>
+        <a id="frunk"><img src="img/frunk.png" alt="open frunk" /></a>
         <img src="img/empty.png"/>
     </div>
     <div class="front">
-        <a onclick="toggleFLDoor()"><img src="img/ldoor.png" alt="toggle front left door" /></a>
-        <a onclick="toggleFLWind()"><img src="img/flroof.png" alt="toggle front left window" /></a>
-        <a onclick="toggleFRWind()"><img src="img/frroof.png" alt="toggle front right window" /></a>
-        <a onclick="toggleFRDoor()"><img src="img/rdoor.png" alt="toggle front right door" /></a>
+        <a id="flDoor"><img src="img/ldoor.png" alt="toggle front left door" /></a>
+        <a id="flWind"><img src="img/flroof.png" alt="toggle front left window" /></a>
+        <a id="frWind"><img src="img/frroof.png" alt="toggle front right window" /></a>
+        <a id="frDoor"><img src="img/rdoor.png" alt="toggle front right door" /></a>
     </div>
     <div class="back">
-        <a onclick="toggleBLDoor()"><img src="img/ldoor.png" alt="toggle back left door" /></a>
-        <a onclick="toggleBLWind()"><img src="img/blroof.png" alt="toggle back left window" /></a>
-        <a onclick="toggleBRWind"><img src="img/brroof.png" alt="toggle back right window" /></a>
-        <a onclick="toggleBRDoor()"><img src="img/rdoor.png" alt="toggle back right door" /></a>
+        <a id="blDoor"><img src="img/ldoor.png" alt="toggle back left door" /></a>
+        <a id="blWind"><img src="img/blroof.png" alt="toggle back left window" /></a>
+        <a id="brWind"><img src="img/brroof.png" alt="toggle back right window" /></a>
+        <a id="brDoor"><img src="img/rdoor.png" alt="toggle back right door" /></a>
     </div>
     <div class="trunk">
         <img src="img/empty.png"/>
-        <a onclick="openTrunk()"><img src="img/trunk.png" alt="open trunk" /></a>
+        <a id="trunk"><img src="img/trunk.png" alt="open trunk" /></a>
         <img src="img/empty.png"/>
     </div>
 
