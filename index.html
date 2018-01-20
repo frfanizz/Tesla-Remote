@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="controller/toggleStuff.js" rel="stylesheet" type="text/css" />
+<title>Car control</title>
+</head>
+<body>
+    <h1>Click on parts of the car to open/close them!</h1>
+    <div class="frunk">
+        <img src="img/empty.png"/>
+        <a onclick="openFrunk()"><img src="img/frunk.png" alt="open frunk" /></a>
+        <img src="img/empty.png"/>
+    </div>
+    <div class="front">
+        <a onclick="toggleFLDoor()"><img src="img/ldoor.png" alt="toggle front left door" /></a>
+        <a onclick="toggleFLWind()"><img src="img/flroof.png" alt="toggle front left window" /></a>
+        <a onclick="toggleFRWind()"><img src="img/frroof.png" alt="toggle front right window" /></a>
+        <a onclick="toggleFRDoor()"><img src="img/rdoor.png" alt="toggle front right door" /></a>
+    </div>
+    <div class="back">
+        <a onclick="toggleBLDoor()"><img src="img/ldoor.png" alt="toggle back left door" /></a>
+        <a onclick="toggleBLWind()"><img src="img/blroof.png" alt="toggle back left window" /></a>
+        <a onclick="toggleBRWind"><img src="img/brroof.png" alt="toggle back right window" /></a>
+        <a onclick="toggleBRDoor()"><img src="img/rdoor.png" alt="toggle back right door" /></a>
+    </div>
+    <div class="trunk">
+        <img src="img/empty.png"/>
+        <a onclick="openTrunk()"><img src="img/trunk.png" alt="open trunk" /></a>
+        <img src="img/empty.png"/>
+    </div>
+
+    <p>The doors, windows, and hood and trunk can all be activated! Thanks <a href="https://www.intrepidcs.com/">Intrepidcs!</a>
+    </p>
+</body>
+</html>
