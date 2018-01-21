@@ -98,6 +98,7 @@ $(document).ready(function () {
 });
 // Generic post request
 postRequest = function(command) {
+    var resp;
     $.ajax({
         type: "POST",
         url: 'http://hackathon.intrepidcs.com/api/data',
@@ -110,7 +111,12 @@ postRequest = function(command) {
         },
         dataType: "JSON",
         success: function (data) {
-            return command === data.command;
+            // console.log(command);
+            // console.log(data["data"][0]["command"]);
+            // console.log(typeof(command));
+            // console.log(typeof(data["data"][0]["command"]));
+            // console.log(command.match(data["data"][0]["command"]));
+            return command === data["data"][0]["command"];
         },
         error: function(data) {
             console.log('Error: ' + data);

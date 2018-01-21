@@ -7,23 +7,21 @@ body {
     text-align: center;
     width: 100%;
     height: 100%;
-    /* background-image: url("../img/tesla_full.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 260px 400px; */
 }
 #remoteCtn {
     position: relative;
-    top: 16px;
+    top: 10px;
     margin-left: auto;
     margin-right: auto;
     font-size: 0;
 }
 .grayed {
     color: gray;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* .flexDiv {
-} */
 #windowsButton {
     background-color: cyan;
     color: black;
@@ -40,11 +38,17 @@ body {
     top: 16px;
 }
 div.fixed {
-    text-align: center;
     position: fixed;
+    width: 100%;
     bottom: 8px;
     font-size: initial;
 } 
 img {
     opacity: 1;
+}
+h2 {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
