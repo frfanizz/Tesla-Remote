@@ -1,4 +1,4 @@
-# SpartanHacksCarControl
+# Tesla Remote
 
 This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and a corresponding API) to demonstrate the control possibilities of such a device. This application is a remote control for the doors (trunk and frunk included) and windows of a Tesla Model X. By selecting a desired door or trunk or frunk, you can open, and then close that door. You can also open all windows on a hot day before stepping into your car. This application has plenty of room for advancement (pending new API function) and can be applied to any reasonably moren car.
 
@@ -27,7 +27,7 @@ Feel free to contribute! Branch, fork, whatever!
 
 ## Authors
 
-* **Francesco Fanizza** - *Initial Work done at SpartanHacks4* - Jan 20, 2018
+* **Francesco Fanizza** - *Initial Work done at Spartan Hack IV* - Jan 19 - 21, 2018
 
 Everyone from Intrepid Control Systems who prepared the API and lended a hand
 
