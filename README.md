@@ -6,7 +6,7 @@ This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and
 
 To test this application, you would need a NeoOBD2 Pro, and reasonable knowledge regarding its installation. After installing, you need a Private Key and Public Key, which should be replaced in the code for functionality.
 
-Alternatively, to just experience the UI, you can download this repository, and, within the file.js file, comment out the existing post request function (lines 100-126) and uncomment the dummy function, which will always return a successful POST response. From here, open index.html on a web browser of your choice, and click on the doors you wish to open/close, as well as the windows.
+Alternatively, to just experience the UI, you can download this repository, and, within the file.js file, comment out the existing post request function (lines 148-172) and uncomment the dummy function which follows (the dummy function will always return a successful POST response). From here, open index.html on a web browser of your choice, and click on the doors you wish to open/close, as well as the windows.
 
 Obviously, this application was limited to the API provided, so there are no GET API calls to check the statuses of any particular door or window, so the application is under the assumption that the starting condition is all doors and windows are closed.
 
