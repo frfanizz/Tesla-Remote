@@ -1,6 +1,6 @@
 # Tesla Remote
 
-This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and a corresponding API) to demonstrate the control possibilities of such a device. This application is a remote control for the doors (trunk and frunk included) and windows of a Tesla Model X. By selecting a desired door or trunk or frunk, you can open, and then close that door. You can also open all windows on a hot day before stepping into your car. This application has plenty of room for advancement (pending new API function) and can be applied to any reasonably moren car.
+This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and a corresponding API) to demonstrate the control possibilities of such a device. This application is a remote control for the doors (trunk and frunk included) and windows of a Tesla Model X. By selecting a desired door or trunk or frunk, you can open, and then close that door. You can also open all windows on a hot day before stepping into your car. This application has plenty of room for advancement (pending new API function) and can be applied to any reasonably modern car.
 
 ![Initial UI](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20basic.png)
 ![UI with active elements](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20with%20active%20elements.png)
@@ -19,7 +19,7 @@ Obviously, this application was limited to the API provided, so there are no GET
 
 * [Gimp](https://www.gimp.org/) - For all that fancy UX work
 
-* [This image from Kelly Blue Book](https://www.kbb.com/car-pictures/2016-tesla-model-x-suv-pictures/) - Which the UX is entirely based on
+* [This image from Kelly Blue Book](https://file.kbb.com/kbb/vehicleimage/evoxseo/xxl/11190/2016-tesla-model%20x-overhead_11190_117_640x480.jpg) - Which the UX is entirely based on
 
 ## Contributing
 
@@ -31,7 +31,7 @@ Feel free to contribute! Branch, fork, whatever!
 
 Everyone from Intrepid Control Systems who prepared the API and lended a hand
 
-## Acknowlegments
+## Acknowledgments
 
 * Intrepid Control Systems
 * SpartanHacks, and Michigan State University
