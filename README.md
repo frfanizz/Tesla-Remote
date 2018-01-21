@@ -2,6 +2,9 @@
 
 This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and a corresponding API) to demonstrate the control possibilities of such a device. This application is a remote control for the doors (trunk and frunk included) and windows of a Tesla Model X. By selecting a desired door or trunk or frunk, you can open, and then close that door. You can also open all windows on a hot day before stepping into your car. This application has plenty of room for advancement (pending new API function) and can be applied to any reasonably moren car.
 
+![Initial UI](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20basic.png)
+![UI with active elements](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20with%20active%20elements.png)
+
 ## Getting Started / Installing
 
 To test this application, you would need a NeoOBD2 Pro, and reasonable knowledge regarding its installation. After installing, you need a Private Key and Public Key, which should be replaced in the code for functionality.
