@@ -5,6 +5,8 @@ This is an application which utilizes Intrepid Control System's NeoOBD2 Pro (and
 ![Initial UI](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20basic.png)
 ![UI with active elements](https://github.com/frfanizz/SpartanHacksCarControl/blob/master/Screen%20Shot%20-%20with%20active%20elements.png)
 
+[Video demo](https://vimeo.com/252040269)
+
 ## Getting Started / Installing
 
 To test this application, you would need a NeoOBD2 Pro, and reasonable knowledge regarding its installation. After installing, you need a Private Key and Public Key, which should be replaced in the code for functionality.
